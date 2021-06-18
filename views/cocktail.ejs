@@ -1,0 +1,15 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+    <div class="jumbotron">
+        <h1>Cocktail Search</h1>
+    </div>
+<form method="post" action="/findspecificCocktail">
+    Here's a bunch of cocktail varieties:
+    <input type="text" name="cocktail"><br>
+    <input type="submit">
+</form>
+
+
+<%- include('bootfooter') -%>

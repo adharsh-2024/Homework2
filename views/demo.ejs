@@ -1,0 +1,171 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+<div class="jumbotron">
+    <h1 class = "display-3">This is the Demo page</h1>
+    <p> This is a paragraph </p>
+</div>
+
+<!--<div class="row">
+  <div class="col-sm" style="min-height:200px;">
+    .col
+  </div>
+  <div class="col-sm">
+    .col
+  </div>
+  <div class="col-sm">
+    .col
+  </div>
+  <div class="col-sm">
+    .col
+  </div>
+
+</div>
+-->
+<select class="form-select" aria-label="Default select example">
+  <option selected>What is Your Favorite Food?</option>
+  <option value="1">Ice Cream</option>
+  <option value="2">Popcorn</option>
+  <option value="3">Pizza</option>
+</select>
+<hr>
+
+<p>What is Your favorite Subject</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Math
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+  <label class="form-check-label" for="flexCheckChecked">
+    Computer Science
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+  <label class="form-check-label" for="flexCheckChecked">
+    UWS
+  </label>
+</div>
+<hr>
+<p class = "lead">My Favorite Hobbies/Activities</p>
+<div class="container">
+  <div class="row row-cols-2">
+    <div class="col">Watch TV</div>
+    <div class="col">Play Video Games</div>
+    <div class="col">Listen to Music</div>
+    <div class="col">Working Out</div>
+  </div>
+</div>
+<hr>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>English</th>
+      <th>Spanish</th>
+      <th>Persian</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>one</td>
+      <td>uno</td>
+      <td>yek</td>
+    </tr>
+    <tr>
+      <td>two</td>
+      <td>dos</td>
+      <td>do</td>
+    </tr>
+    <tr>
+      <td>three</td>
+      <td>tres</td>
+      <td>se</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<h2>Follow the links!</h2>
+<ol>
+     <li><a href="images/innoutburger.jpg" class="link-primary">Burger</a></li>
+     <li><a href="images/innoutfries.jpg" class="link-success">Fries</a></li>
+     <li><a href="http://www.brandeis.edu" class="link-info">Brandeis</a></li>
+</ol>
+<hr>
+
+
+<ul class="list-group">
+  <h1> My favorite foods</h1>
+  <li class="list-group-item">Pizza</li>
+  <li class="list-group-item">Popcorn</li>
+  <li class="list-group-item">Burger</li>
+  <li class="list-group-item">French Fries</li>
+  <li class="list-group-item">Ice Cream</li>
+</ul>
+
+
+
+  <h6>Count to 3 in Persian</h6>
+  <ol>
+    <li>yek</li>
+    <li>do</li>
+    <li>se</li>
+  </ol>
+
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">This is an alert element.
+   <strong>But Wait!</strong> There's more elements down below!
+   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+
+<button type="button" class="btn btn-primary">Click Please!</button>
+
+  <div>
+    This is a div element
+  </div>
+
+  <hr>
+
+  <div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+ </div>
+
+
+
+<h3 class = "display-4">Images of some of my favorite foods.</h3>
+  <div class="row">
+    <div class="col">
+      Veggie Burger
+      <img src="images/innoutburger.jpg" class = "img-thumbnail" alt="burger"
+       width="200">
+    </div>
+    <div class="col">
+      French Fries
+      <img src="images/innoutfries.jpg" class = "img-thumbnail" alt = "fries"
+       width="200">
+    </div>
+  </div>
+<hr>
+  <form method="post" action="/showformdata" class="bg-info">
+    <br>
+    Describe how you plan on spending your summer vacation:
+    <textarea name="bio" rows="10" cols="40"></textarea>
+    <br>
+    What countries would you like to visit:<br>
+    Japan <input type="checkbox" name="interest" value="reading"><br>
+    China <input type="checkbox" name="interest" value="code"><br>
+    Egypt <input type="checkbox" name="interest" value="voice"><br>
+    India
+          <input type="checkbox" name="interest" value="games"><br>
+    Mexico
+          <input type="checkbox" name="interest" value="zen"><br>
+    <hr>
+    <input type="submit" value="Submit">
+  </form>
+
+  <hr>
+
+<%- include('bootfooter') -%>

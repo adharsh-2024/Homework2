@@ -1,0 +1,41 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+<div class="jumbotron">
+    <h1>Cocktail Finder</h1>
+    <p>This app gets its cocktail varieties from
+        <a href="http://www.thecocktaildb.com">http://www.thecocktaildb.com</a>
+        </p>
+</div>
+
+
+<% results.drinks.map((recipe) => {%>
+<div style="border-top:thick solid blue; margin:20; padding:10">
+    <h1 class="bg-warning"> <%= recipe.strDrink %> </h1>
+
+</div>
+<%})%>
+
+
+
+
+
+
+
+
+
+
+
+
+<form method="post" action="/findspecificCocktail">
+    What cocktail do you want to find
+    <input type="text" name="cocktail"><br>
+    <input type="submit">
+</form>
+
+
+<%= JSON.stringify(results) %>
+
+
+<%- include('bootfooter') -%>

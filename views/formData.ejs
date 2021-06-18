@@ -1,0 +1,29 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+<div class="jumbotron">
+        <h1>
+            <%= body.fullname %>
+        </h1>
+        <p>Here's a page that tells me about you </p>
+</div>
+<div class = "row">
+  <div class = "col bg-info">
+    Your name is <%= body.fullname %><br>
+  </div>
+  <div class = "col bg-warning">
+    Your age is <%= body.age %><br>
+  </div>
+  <div class = "col bg-danger">
+    <%= body.fromMassachusetts %> from Massachusetts.<br>
+  </div>
+  <div class = "col bg-primary">
+    Your favorite season is <%= body.season %>.
+  </div>
+</div>
+
+
+
+
+
+
+<%- include('bootfooter') -%>
