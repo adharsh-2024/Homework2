@@ -1,0 +1,38 @@
+<%- include('bootheader') -%>
+
+<%- include('menubar') -%>
+
+<div class="jumbotron">
+    <h1>Annual Average Temps from 1940 to 1959</h1>
+</div>
+
+
+
+<% results.map((temp) => {%>
+<div style="border-top:thick solid blue; margin:20; padding:10">
+    <h1 class="bg-warning">Annual Temp Values</h1>
+    <div class="row">
+        <div class="col">
+            <h2 class = "display-5">All the Annual Temp Values from 1940-1959</h2>
+            <ol class="list-group list-group-numbered">
+            <% temp.annualData.map((i) => {%>
+                <li class = "list-group-item"> <%= i %>  </li>
+            <%})%>
+            </ol>
+        </div>
+   </div>
+</div>
+<%})%>
+
+
+
+
+
+
+
+
+
+<%= JSON.stringify(results) %>
+
+
+<%- include('bootfooter') -%>

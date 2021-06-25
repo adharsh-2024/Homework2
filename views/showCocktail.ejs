@@ -10,14 +10,41 @@
 </div>
 
 
+
+
 <% results.drinks.map((recipe) => {%>
 <div style="border-top:thick solid blue; margin:20; padding:10">
     <h1 class="bg-warning"> <%= recipe.strDrink %> </h1>
+    <div class="row">
+        <div class="col">
+            <img src="<%= recipe.strDrinkThumb %>" class="img-thumbnail" width="200">
+            <br>
 
+        </div>
+        <div class="col">
+            <h2 class = "display-5">Instructions</h2>
+            <ol class="list-group list-group-numbered">
+            <% recipe.strInstructions.split(",").map((i) => {%>
+                <li class = "list-group-item"> <%= i %>  </li>
+            <%})%>
+            </ol>
+        </div>
+        <div class = "col">
+          <h2 class = "display-5">Ingredients</h2>
+          <ul class="list-group">
+          <% for(i=1; i<15; i++) {
+            if(recipe['strIngredient'+i] == null)
+            {
+              break
+            }
+          %>
+            <li class = "list-group-item"> <%= recipe['strIngredient'+i] %> <%= recipe['strMeasure'+i] %> </li>
+          <%}%>
+          </ul>
+        </div>
+   </div>
 </div>
 <%})%>
-
-
 
 
 
